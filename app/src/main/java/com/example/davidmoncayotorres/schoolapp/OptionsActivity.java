@@ -23,7 +23,7 @@ public class OptionsActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.listOptions);
         String[] values = new String[] { "Profesores", "Cursos", "Directivos",
-                "Noticias", "Contactenos" };
+                "Noticias", "Contáctenos" };
 
         // First p  aramenter - Context
         // Second parameter - Layout for the row
@@ -42,7 +42,8 @@ public class OptionsActivity extends AppCompatActivity {
 
                 String item = ((TextView) view).getText().toString();
 
-                if (position == 0) {
+                if (position == 0)
+                {
                     startActivity(new Intent(OptionsActivity.this, TeacherActivity.class));
                 }
                 else
